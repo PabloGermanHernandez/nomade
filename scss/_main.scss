@@ -1,0 +1,36 @@
+.frase1{
+	width: $ancho;
+	background-color: $fondo;
+	@include miMixin(100px, $borde-principal, 2px);
+	
+}
+
+.frase2{
+	@extend .frase1;
+}
+
+.frase3{
+		@extend .frase1;
+}
+
+.frase4{
+		@extend .frase1;
+}
+
+.frase5{
+		@extend .frase1;
+}
+
+.frase6{
+		@extend .frase1;
+}
+
+.texto{
+	width: $ancho;
+	@include miMixin2(150px);
+}
+
+.texto2{
+		@extend .texto;
+		background: orange;
+}

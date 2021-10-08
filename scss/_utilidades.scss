@@ -1,0 +1,26 @@
+@mixin miMixin($valor, $borde-principal, $borde: 1px){
+	height: $valor;
+	border: $borde solid $borde-principal;
+}
+
+@mixin miMixin2($valor){
+	height: $valor;
+}
+
+.font-main{
+	font-family: $font-main;
+}
+
+@mixin nomader($nombre){
+	@if $nombre == pablo{
+		color: orange;
+	}@else if $nombre == craig{
+		color: darkorange;
+	}@else if $nombre == elon{
+		color: red;
+	}@else{
+		color: black;	
+	}
+	font-size: 1rem;
+	padding: .5rem .75rem;
+}

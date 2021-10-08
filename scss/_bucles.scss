@@ -1,0 +1,16 @@
+@for $i from 1 through $total-columnas{
+	.col-#{$i}{
+		width: ($ancho / 12) * $i;
+	}
+}
+@each $s in 10px, 12px, 14px, 16px, 24px{
+	.font-#{$s}{
+		font-size: $s;
+	}
+}
+
+@each $k, $v in $nomader{
+	.nomader-#{$k}{
+		background-color: $v;
+	}
+}
